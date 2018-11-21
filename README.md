@@ -57,33 +57,43 @@ __VST idle time to unload DLL (0-10,000 ms) (0.7.1 and below)__
 Change log
 ======================  
 __0.9.0.3__  
-* Fixed removal on the player updates.  
+* Fixed removal on the player updates.
+
 __0.9__  
 * Support for conversion and playback with same DSP chain presets.
 * Preset manager for each VST.
 * Per-instance channel number limit.
-* DSP config shortcuts bugfixes.  
+* DSP config shortcuts bugfixes.
+
 __0.8.1.0__  
 * Revamped VST [un]loading strategy with regard to threading issues.
-* Doesn't use registry anymore (hold Shift and press Add button to get VST entries back).  
+* Doesn't use registry anymore (hold Shift and press Add button to get VST entries back).
+
 __0.7.1__  
-* Bugfixes in the portable mode support.  
+* Bugfixes in the portable mode support.
+
 __0.7.0__  
 * Serious bugfixes.
-* Relative paths in portable mode.  
+* Relative paths in portable mode.
+
 __0.6.0__  
 * Added FXP export/import.
 * Improved View → DSP menu.
-* Introduced declicker.  
+* Introduced declicker.
+
 __0.52__  
-* Fixed the bug which could lead to crash after stopping the playback.  
+* Fixed the bug which could lead to crash after stopping the playback.
+
 __0.51__  
-* Added experimental support for no-reload track switching.  
+* Added experimental support for no-reload track switching.
+
 __0.5__  
 * Added experimental support for non-modal config dialogs (View → DSP).
 * Added some formal procedures for some capricious plug-ins to work.
-* Added output number limitation setting.  
+* Added output number limitation setting.
+
 __0.2__  
-* Fixed major stability issues. Marked as v1.00.01.  
+* Fixed major stability issues. Marked as v1.00.01.
+
 __0.1__  
 * Initial release marked as v1.0. Very unstable.
