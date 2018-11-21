@@ -43,47 +43,47 @@ Settings
 ======================
 This component has only advanced settings placed in the corresponding section of Foobar2000 preferences. Depending on the component version they can be found either in the Playback or VST category (the latter is true for v0.6+). All the problems that mentioned here are caused by the differences between Foobar2000 and VST approaches to DSP implementation.
 
-__Declicker size (256*n samples, 4 by default)__
+__Declicker size (256*n samples, 4 by default)__  
 &ensp;&ensp;Number of zero samples to be passed through VST on transport switches to suppress plug-in's output data that can produce click at the beginning of the next track, i.e. ringing of filters or delay effect tail. The latter requires this number to be increased. Changes to this setting take effect after restart.
 
-__Limit number of outputs__
+__Limit number of outputs__  
 &ensp;&ensp;In contrast to DAW, audio players don't manage outputs of their DSPs. Besides, many VST plug-ins don't report activity of their outputs. Hence the only way to output data from 16-channel VST is to drop some of the channels according to the setting.
 
-__VST idle time to unload DLL (0-10,000 ms) (0.7.1 and below)__
+__VST idle time to unload DLL (0-10,000 ms) (0.7.1 and below)__  
 &ensp;&ensp;The delay is needed to suppress excessive unload-load cycles between tracks, i.e. to keep VST plug-ins loaded as it is supposed to be for them. In 0.8 the [un]loading strategy was revamped and this setting isn't necessary anymore.
 
 
 
 Change log
-======================
-__0.9.0.3__
-* Fixed removal on the player updates
-__0.9__
-* Support for conversion and playback with same DSP chain presets
-* Preset manager for each VST
-* Per-instance channel number limit
-* DSP config shortcuts bugfixes
-__0.8.1.0__
+======================  
+__0.9.0.3__  
+* Fixed removal on the player updates.  
+__0.9__  
+* Support for conversion and playback with same DSP chain presets.
+* Preset manager for each VST.
+* Per-instance channel number limit.
+* DSP config shortcuts bugfixes.  
+__0.8.1.0__  
 * Revamped VST [un]loading strategy with regard to threading issues.
-* Doesn't use registry anymore (hold Shift and press Add button to get VST entries back).
-__0.7.1__
-* Bugfixes in the portable mode support.
-__0.7.0__
+* Doesn't use registry anymore (hold Shift and press Add button to get VST entries back).  
+__0.7.1__  
+* Bugfixes in the portable mode support.  
+__0.7.0__  
 * Serious bugfixes.
-* Relative paths in portable mode.
-__0.6.0__
+* Relative paths in portable mode.  
+__0.6.0__  
 * Added FXP export/import.
 * Improved View → DSP menu.
-* Introduced declicker.
-__0.52__
-* Fixed the bug which could lead to crash after stopping the playback
-__0.51__
-* Added experimental support for no-reload track switching.
-__0.5__
+* Introduced declicker.  
+__0.52__  
+* Fixed the bug which could lead to crash after stopping the playback.  
+__0.51__  
+* Added experimental support for no-reload track switching.  
+__0.5__  
 * Added experimental support for non-modal config dialogs (View → DSP).
 * Added some formal procedures for some capricious plug-ins to work.
-* Added output number limitation setting
-__0.2__
-* Fixed major stability issues. Marked as v1.00.01.
-__0.1__
+* Added output number limitation setting.  
+__0.2__  
+* Fixed major stability issues. Marked as v1.00.01.  
+__0.1__  
 * Initial release marked as v1.0. Very unstable.
